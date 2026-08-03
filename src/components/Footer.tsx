@@ -19,7 +19,7 @@ const Footer = () => {
             <div className="mb-5 flex items-center gap-3">
               <div className="flex h-12 w-12 items-center justify-center overflow-hidden rounded-xl bg-white shadow-sm ring-1 ring-slate-200">
                 <img
-                  src="/favicon-64x64.png"
+                  src="/qrf-favicon-64x64.png"
                   alt="QRF Communications"
                   className="h-10 w-10 object-contain"
                 />

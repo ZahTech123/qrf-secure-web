@@ -46,7 +46,7 @@ const Navigation = () => {
             <div className="flex items-center space-x-3 cursor-pointer" onClick={() => navigate('/')}>
               <div className="flex h-12 w-12 items-center justify-center overflow-hidden rounded-xl bg-white shadow-sm ring-1 ring-slate-200">
                 <img
-                  src="/favicon-64x64.png"
+                  src="/qrf-favicon-64x64.png"
                   alt="QRF Communications"
                   className="h-10 w-10 object-contain"
                 />
@@ -90,7 +90,7 @@ const Navigation = () => {
                 </SheetTrigger>
                 <SheetContent side="right" className="w-[320px] border-slate-200 bg-white">
                   <div className="mt-6 flex items-center gap-3">
-                    <img src="/favicon-64x64.png" alt="QRF Communications" className="h-11 w-11 rounded-xl bg-white object-contain ring-1 ring-slate-200" />
+                    <img src="/qrf-favicon-64x64.png" alt="QRF Communications" className="h-11 w-11 rounded-xl bg-white object-contain ring-1 ring-slate-200" />
                     <div>
                       <p className="font-black text-slate-950">QRF Communications</p>
                       <p className="text-xs font-semibold uppercase tracking-[0.2em] text-cyan-700">Security Response</p>

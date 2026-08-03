@@ -1,4 +1,4 @@
-"""Build the QRF favicon package from the approved square monogram."""
+"""Build the QRF-only favicon package from the approved square monogram."""
 
 from pathlib import Path
 
@@ -21,18 +21,30 @@ def main() -> None:
 
     for size in (16, 32, 48, 64, 96):
         resized(master, size).save(
-            PUBLIC / f"favicon-{size}x{size}.png",
+            PUBLIC / f"qrf-favicon-{size}x{size}.png",
             format="PNG",
             optimize=True,
         )
 
+    resized(master, 48).save(
+        PUBLIC / "qrf-favicon.png",
+        format="PNG",
+        optimize=True,
+    )
+
     resized(master, 180).save(
-        PUBLIC / "apple-touch-icon.png",
+        PUBLIC / "qrf-apple-touch-icon.png",
         format="PNG",
         optimize=True,
     )
     resized(master, 192).save(
-        PUBLIC / "android-chrome-192x192.png",
+        PUBLIC / "qrf-app-icon-192x192.png",
+        format="PNG",
+        optimize=True,
+    )
+
+    resized(master, 512).save(
+        PUBLIC / "qrf-app-icon-512x512.png",
         format="PNG",
         optimize=True,
     )

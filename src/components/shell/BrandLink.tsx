@@ -28,7 +28,7 @@ export function BrandLink({
           aria-hidden="true"
           className="h-9 w-9 object-contain"
           height="64"
-          src="/favicon-64x64.png"
+          src="/qrf-favicon-64x64.png"
           width="64"
         />
       </span>
